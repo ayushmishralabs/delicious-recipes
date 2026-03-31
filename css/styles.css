@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #2a2a40);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+nav h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9f43;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    opacity: 0.8;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 260px;
+    padding: 15px;
+    border-radius: 18px;
+    text-align: center;
+
+    background: linear-gradient(145deg, #2d2d4a, #1c1c2b);
+    box-shadow: 8px 8px 18px #141420,
+                -6px -6px 18px #3a3a5c;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #ff9f43;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #feca57;
+}
+
+.recipe {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.recipe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.recipe ul {
+    margin: 10px 0 20px 20px;
+}
+
+.recipe ol {
+    margin-left: 20px;
+}
+
+.recipe li {
+    margin-bottom: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #ccc;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
